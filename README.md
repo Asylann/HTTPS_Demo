@@ -24,3 +24,19 @@
 * and use this created `"localhost+2.pem"`, `"localhost+2-key.pem"` certs in server
 
 ## And how to use them, you can find in server/main.go
+
+#### It is just quite simple example, and next things can be:
+
+* HSTS (HTTP Strict Transport Security): learn to send the Strict-Transport-Security header to force browsers onto HTTPS and prevent protocol downgrades.
+
+* OCSP stapling & CRL: how to check certificate revocation in real time.
+
+* HTTP/2 & HTTP/3 (QUIC): enabling them over TLS and measuring performance gains.
+
+* Perfect Forward Secrecy (PFS): choosing cipher suites (e.g. ECDHE) to ensure session keys can’t be retroactively decrypted.
+
+* Mutual TLS (mTLS): requiring client certs for two‑way authentication (common in microservices)!
+
+* Security headers: CSP, HPKP (deprecated but instructive), X-Frame-Options, etc.
+
+* TLS configuration testing: using tools like SSL Labs or testssl.sh to harden your server’s config.
